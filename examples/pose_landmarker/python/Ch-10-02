@@ -1,0 +1,26 @@
+// Piyush Shrivastava
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x = 25;     // int variable
+    int *ptr;       // Pointer variable, can point to an int
+
+    ptr = &x;       // Store the address of x in ptr
+
+    // Use both x and ptr to display the value in x
+    cout << "Here is the value in x, printed twice:" << endl;
+    cout << x << " " << *ptr << endl;
+
+    // Assign 100 to the location pointed to by ptr
+    *ptr = 100;
+
+    // Use both x and ptr to display the value in x
+    cout << "Once again, here is the value in x:" << endl;
+    cout << x << " " << *ptr << endl;
+
+    return 0;
+}
